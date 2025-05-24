@@ -1,5 +1,5 @@
 
-import DashboardContent from './components/DashboardContent'
+import DashboardMainContent from './components/DashboardMainContent'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 
@@ -10,7 +10,7 @@ function App() {
       <Sidebar />
       <div className="flex flex-col flex-1">
         <Header />
-        <DashboardContent />
+        <DashboardMainContent />
       </div>
     </div>
     </>
