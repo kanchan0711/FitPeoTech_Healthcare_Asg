@@ -30,18 +30,18 @@ const HealthStatusCards = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-[#f5f9ff] w-[160px] rounded-xl p-4 shadow-sm"
+            className="bg-[#f5f9ff] w-[160px] 2xl:w-[175px] rounded-xl p-4 shadow-sm"
           >
             {/* Icon and title */}
-            <div className="flex items-center gap-2 my-2">
-              <span className="text-2xl">{card.icon}</span>
-              <p className="text-[#1f2b6c] font-semibold text-sm">
+            <div className="flex items-center gap-2 my-2 2xl:my-3">
+              <span className="text-2xl 2xl:text-3xl">{card.icon}</span>
+              <p className="text-[#1f2b6c] font-semibold text-sm 2xl:text-lg">
                 {card.title}
               </p>
             </div>
   
             {/* Date */}
-            <p className="text-gray-400 text-xs mb-2">Date: {card.date}</p>
+            <p className="text-gray-400 text-xs mb-2 2xl:mb-3">Date: {card.date}</p>
   
             {/* Health status bar */}
             <div className="relative h-1.5 bg-gray-200 rounded-full">

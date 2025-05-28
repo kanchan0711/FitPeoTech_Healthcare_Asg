@@ -50,7 +50,7 @@ const UpcomingSchedule = () => {
 
   return (
     <div className="py-6">
-      <h2 className="text-lg font-semibold text-[#1f2b6c] mb-4">The Upcoming Schedule</h2>
+      <h2 className="text-lg 2xl:text-xl  font-semibold text-[#1f2b6c] mb-4">The Upcoming Schedule</h2>
 
       {schedule.map((dayItem, index) => (
         <div key={index} className="mb-6">

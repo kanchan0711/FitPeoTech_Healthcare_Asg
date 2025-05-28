@@ -2,9 +2,9 @@ import { MessageSquareDiff,FileChartLine, Calendar, Settings, MessageCircle, Pho
 
 const Sidebar = () => {
   return (
-    <div className="w-40 h-full bg-[#f5f9ff] px-6 py-10 flex flex-col">
+    <div className="w-full h-full bg-[#f5f9ff]  py-12 flex flex-col items-center">
       {/* Logo */}
-      <div className="text-2xl font-bold mb-10">
+      <div className="text-2xl 2xl:text-[25px] font-semibold  mb-10">
         <span className="text-cyan-400">Health</span>
         <span className="text-[#1f2b6c]">care.</span>
       </div>
@@ -13,8 +13,8 @@ const Sidebar = () => {
       <div className="flex flex-col gap-8">
         {/* GENERAL */}
         <div>
-          <p className="text-gray-300 text-sm mb-3">General</p>
-          <ul className="flex flex-col gap-2 text-xs">
+          <p className="text-gray-400 text-sm mb-3">General</p>
+          <ul className="flex flex-col gap-2 text-xs 2xl:text-sm">
             <SidebarItem icon={<LayoutDashboard size={18} />} text="Dashboard" active />
             <SidebarItem icon={<ArrowDownUp size={18} />} text="History" />
             <SidebarItem icon={<Calendar size={18} />} text="Calendar" />
@@ -25,14 +25,14 @@ const Sidebar = () => {
 
         {/* TOOLS */}
         <div>
-          <p className="text-gray-300 text-xs mb-3">Tools</p>
-          <ul className="flex flex-col gap-3 text-xs">
+          <p className="text-gray-400 text-xs 2xl:text-sm mb-3">Tools</p>
+          <ul className="flex flex-col gap-3 text-xs 2xl:text-sm">
             <SidebarItem icon={<MessageCircle size={18} />} text="Chat" />
             <SidebarItem icon={<Phone size={18} />} text="Support" />
           </ul>
         </div>
 
-        <div className="text-gray-400 text-sm mb-3">
+        <div className="text-gray-400 text-sm mb-3 ">
         <SidebarItem icon={<Settings size={18} />} text="Setting" />
         </div>
 

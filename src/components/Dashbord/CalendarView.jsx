@@ -16,15 +16,15 @@ const CalendarView = () => {
 
   
     return (
-      <div className="bg-[#f5f9ff] pt-8 px-5 w-full">
+      <div className="bg-[#f5f9ff] pt-8 px-5 2xl:px-9 w-full">
         <div className="flex justify-between items-center">
-        <h2 className="text-[#1f2b6c] font-semibold text-lg mb-3">October 2021</h2>
+        <h2 className="text-[#1f2b6c] font-semibold text-lg mb-3 2xl:mb-6">October 2021</h2>
         <div className="flex gap-2 py-3">
             <ArrowLeft size={14} color="#1f2b6c"/>
             <ArrowRight size={14} color="#1f2b6c"/>
         </div>
         </div>
-        <div className="grid grid-cols-7 gap-4">
+        <div className="grid grid-cols-7 gap-4 ">
           {days.map((d, i) => {
             const isActive = d.date === 26; 
             return (
@@ -36,14 +36,14 @@ const CalendarView = () => {
               >
                 <p className="text-xs text-[#1f2b6c]">{d.day}</p>
                 <div
-                  className={`rounded-full px-2 py-1 text-[#1f2b6c] mt-1 mb-2 font-bold`}
+                  className={`rounded-full px-2 py-1 text-[#1f2b6c] mt-1 mb-2 font-bold 2xl:text-xl`}
                 >
                   {d.date}
                 </div>
                 {d.times.map((slot, idx) => (
                   <div
                     key={idx}
-                    className={`w-full text-center text-[10px] flex justify-center items-center flex-col rounded-lg h-6 mb-2  ${
+                    className={`w-full text-center text-[10px] 2xl:text-[12px] flex justify-center items-center flex-col rounded-lg h-6 mb-2  ${
                       d.activeSlot.includes(slot)
                         ? (isActive ?"bg-[#1f2b6c] text-white" : "bg-[#ADAFDA] text-white")
                         : "text-[#1f2b6c] px-1"
@@ -58,7 +58,7 @@ const CalendarView = () => {
           })}
         </div>
 
-        <div className="flex gap-4 mt-4">
+        <div className="flex gap-4 mt-4 ">
       <AppointmentCard
         title="Dentist"
         time="09:00 - 11:00"

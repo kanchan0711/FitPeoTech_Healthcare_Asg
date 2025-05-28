@@ -2,10 +2,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-full pt-10 flex justify-between items-center ">
+    <div className="w-full flex justify-between gap-4 items-center px-5 ">
   
-      <div className="w-[55%] flex gap-3 justify-center mx-7">
-        <div className="flex gap-2 items-center w-full border  border-gray-200 px-4 py-2 rounded-lg  ">
+      <div className="w-[50%] flex gap-3 justify-center pt-10 ">
+        <div className="flex gap-2 items-center w-full border  border-gray-200 px-4 py-2 rounded-lg   ">
           <svg
             width="20px"
             height="20px"
@@ -36,7 +36,7 @@ const Header = () => {
             disabled
           />
         </div>
-        <div className="size-10 flex justify-center items-center border  border-gray-200 rounded-lg">
+        <div className="size-10  flex justify-center items-center border  border-gray-200 rounded-lg">
           <svg
             width="20px"
             height="20px"
@@ -64,7 +64,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="w-[45%]  h-full pr-7 bg-[#F6FAFF] flex justify-end items-center gap-2">
+      <div className="w-[50%] pt-10 h-full pr-7 bg-[#F6FAFF] flex justify-end items-center gap-2">
         <div className=" size-10 flex justify-center items-center bg-[#00E4EB] rounded-lg">
           <svg
             fill="#2A0F00"

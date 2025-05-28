@@ -48,7 +48,7 @@ const ActivityFeed = () => {
 
 
   return (
-    <div className=" rounded-xl bg-[#f6f9fe] shadow-sm p-4 max-w-3xl mx-10">
+    <div className=" rounded-xl bg-[#f6f9fe] shadow-sm p-4 max-w-3xl mx-10 ">
       <div className="flex justify-between mb-2">
         <h2 className="text-md font-semibold text-[#1f2b6c]">Activity</h2>
         <p className="text-xs text-gray-500">3 appointment on this week</p>

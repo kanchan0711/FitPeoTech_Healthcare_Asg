@@ -20,12 +20,12 @@ function App() {
         {/* Content Area (below header) */}
         <div className="flex flex-1 gap-4">
           {/* Dashboard Main Content */}
-          <div className="w-[55%]">
+          <div className="w-[50%]">
             <DashboardMainContent />
           </div>
 
           {/* Calendar View */}
-          <div className="w-[49%]">
+          <div className="w-[50%]">
              <CalendarView />
           </div>
         </div>

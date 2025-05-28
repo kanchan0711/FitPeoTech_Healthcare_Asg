@@ -6,7 +6,7 @@ import ActivityFeed from './ActivityFeed'
 
 const DashboardOverview = () => {
   return (
-    <div className='pt-8'>
+    <div className='pt-8 '>
         <div className="flex justify-between mx-5">
         <span className="text-[#1f2b6c] font-semibold text-[1.65rem]">
           Dashboard
@@ -16,12 +16,11 @@ const DashboardOverview = () => {
           <ChevronDown size={16} />
         </span>
       </div>
-      <div className='flex justify-between my-3 mx-10'>
+      <div className='flex justify-between  mx-10 mb-8'>
         <AnatomySection/>
         <HealthStatusCards/>
         </div>
         <ActivityFeed/>
-
     </div>
   )
 }
